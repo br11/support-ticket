@@ -10,6 +10,12 @@ Using in-memory DB (H2)
 - MacOS or Linux
 
 ## Coverage:
+#### Source code in a GitHub repo:
+``` 
+git clone https://github.com/br11/support-ticket.git
+``` 
+
+## Coverage:
 
 #### Commands:
 ``` 
