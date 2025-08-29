@@ -1,7 +1,7 @@
 # support-ticket
-Microservice with CRUD + Kafka Pub/Sub
+Microservice with CRUD + Kafka Pub/Sub.
 
-Using in-memory DB (H2)
+This app uses an in-memory DB (H2).
 
 ## Requirements
 - Docker
@@ -9,13 +9,14 @@ Using in-memory DB (H2)
 - Maven
 - MacOS or Linux
 
-## Coverage:
-#### Source code in a GitHub repo:
+## Source code
+
+#### GitHub repo:
 ``` 
 git clone https://github.com/br11/support-ticket.git
 ``` 
 
-## Coverage:
+## Coverage
 
 #### Commands:
 ``` 
@@ -27,11 +28,11 @@ mvn clean verify
 ./target/site/jacoco/index.html
 ```
 
-## How to run tests.
+## How to run tests
 
-### Commands:
+#### Commands:
 
-#### On terminal #1: start the kafka container and the support ticket container
+#### On terminal #1: start the kafka container and the support ticket container.
 ``` 
 cd support-ticket
 
@@ -41,7 +42,7 @@ chmod +x ./tools/down
 ./tools/up
 ```
 
-#### On terminal #2: start a kafka consumer to monitor ticket integration events (optional)
+#### On terminal #2: start a kafka consumer to monitor ticket integration events (optional).
 ``` 
 docker exec -it kafka bash
 ```
@@ -53,7 +54,7 @@ kafka-console-consumer.sh \
   --from-beginning
 ```
 
-#### On terminal #3: Invoke the support ticket API
+#### On terminal #3: Invoke the support ticket API.
 ``` 
 # Create an open support ticket
 curl -i -X POST http://localhost:8080/api/support-tickets \
@@ -89,7 +90,7 @@ curl -i -X PUT http://localhost:8080/api/support-tickets/{uuid} \
 
 ```
 
-#### On terminal #1: stop the kafka container and the support ticket container
+#### On terminal #1: stop the kafka container and the support ticket container.
 ``` 
 ./tools/down
 ```
