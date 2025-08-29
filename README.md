@@ -36,9 +36,12 @@ mvn clean verify
 ``` 
 cd support-ticket
 
-chmod +x ./tools/up
-chmod +x ./tools/down
+# On MacOS, remove the quarantine flag
+xattr -rd com.apple.quarantine ./tools/
 
+chmod +x ./tools/*
+```
+```
 ./tools/up
 ```
 
