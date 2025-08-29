@@ -20,7 +20,6 @@ DELETE http://localhost:8080/api/support-tickets/{uuid}
 }
 ``` 
 
-
 ## Requirements
 - Docker
 - Java 17 ou 21
@@ -29,24 +28,24 @@ DELETE http://localhost:8080/api/support-tickets/{uuid}
 
 ## Source code
 
-#### GitHub repo:
+#### GitHub repository:
 ``` 
 git clone https://github.com/br11/support-ticket.git
 ``` 
 
-## Coverage
+## Code Coverage
 
 #### Commands:
 ``` 
 cd support-ticket
 mvn clean verify
 ```
-#### Report location: 
+#### Coverage Report location: 
 ```
 ./target/site/jacoco/index.html
 ```
 
-## How to run tests
+## How to execute manual tests
 
 #### Commands:
 
