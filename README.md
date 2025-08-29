@@ -49,26 +49,39 @@ kafka-console-consumer.sh \
 curl -i -X POST http://localhost:8080/api/support-tickets \
   -H "Content-Type: application/json" \
   -d '{"title": "Test ticket", "description": "Test ticket description", "status": "OPEN"}'
-
+```
+*Replace {uuid} with the uuid of the support ticket created above*
+```
 # Verify if the support ticket is OPEN
-curl -i -X GET http://localhost:8080/api/support-tickets/{uuid} <-- REPLACE {uuid} with the uuid of the support ticket created above
+curl -i -X GET http://localhost:8080/api/support-tickets/{uuid}
+```
 
-
+```
 # Update the support ticket’s status to IN_PROGRESS 
 curl -i -X PUT http://localhost:8080/api/support-tickets/{uuid} \
   -H "Content-Type: application/json" \
   -d '{"title": "Test ticket", "description": "Test ticket description", "status": "IN_PROGRESS"}'
+```
 
+```
 # Verify if the support ticket is IN_PROGRESS
 > curl -i -X GET http://localhost:8080/api/support-tickets/{uuid} 
+```
 
-
+```
 # Delete the support ticket
 > curl -i -X DELETE http://localhost:8080/api/support-tickets/{uuid} 
+```
 
+```
 # Verify if the support ticket was deleted by receiving a http 404 error
 > curl -i -X GET http://localhost:8080/api/support-tickets/{uuid} 
 
+```
+
+#### On terminal #1: stop the kafka container and the support ticket container
+``` 
+./tools/down
 ```
 
 
