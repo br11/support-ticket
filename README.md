@@ -50,7 +50,7 @@ curl -i -X POST http://localhost:8080/api/support-tickets \
   -H "Content-Type: application/json" \
   -d '{"title": "Test ticket", "description": "Test ticket description", "status": "OPEN"}'
 ```
-*Replace {uuid} with the uuid of the support ticket created above*
+<span style="color:yellow">*Replace {uuid} with the uuid of the support ticket created above*</span>
 ```
 # Verify if the support ticket is OPEN
 curl -i -X GET http://localhost:8080/api/support-tickets/{uuid}
