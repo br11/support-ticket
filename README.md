@@ -35,8 +35,10 @@ chmod +x ./tools/down
 
 #### On terminal #2: start a kafka consumer to monitor ticket integration events (optional)
 ``` 
-cd support-ticket
-
+docker exec -it kafka bash
+```
+```
+# Inside the container, run:
 kafka-console-consumer.sh \
   --bootstrap-server localhost:9092 \
   --topic ticket-events \
