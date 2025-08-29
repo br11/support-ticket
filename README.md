@@ -115,6 +115,12 @@ curl -i -X PUT http://localhost:8080/api/support-tickets/{uuid} \
 ./tools/down
 ```
 
+## Suggested improvements
+
+#### REST API documentation with Swagger
+
+#### Boilerplate code reduction with Lombok
+
 
 
 
