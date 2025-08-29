@@ -1,6 +1,8 @@
 # support-ticket
 Microservice with CRUD + Kafka Pub/Sub
 
+Using in-memory DB (H2)
+
 ## Requirements
 - Docker
 - Java 17 ou 21
