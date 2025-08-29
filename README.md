@@ -51,7 +51,7 @@ curl -i -X POST http://localhost:8080/api/support-tickets \
   -d '{"title": "Test ticket", "description": "Test ticket description", "status": "OPEN"}'
 
 # Verify if the support ticket is OPEN
-curl -i -X GET http://localhost:8080/api/support-tickets/{uuid} 
+curl -i -X GET http://localhost:8080/api/support-tickets/{uuid} <-- REPLACE {uuid} with the uuid of the support ticket created above
 
 
 # Update the support ticket’s status to IN_PROGRESS 
