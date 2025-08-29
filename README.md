@@ -106,7 +106,7 @@ curl -i -X PUT http://localhost:8080/api/support-tickets/{uuid} \
 ```
 
 ```
-# Verify if the support ticket was deleted by receiving a http 404 error
+# Verify if the support ticket was deleted by receiving a http 404 status code
 > curl -i -X GET http://localhost:8080/api/support-tickets/{uuid} 
 
 ```
