@@ -1,7 +1,25 @@
 # support-ticket
-Microservice with CRUD + Kafka Pub/Sub.
+Microservice with CRUD + Kafka Pub/Sub. 
 
-This app uses an in-memory DB (H2).
+(Spring Boot + Kafka + H2 + Docker)
+
+#### REST endpoints
+``` 
+POST http://localhost:8080/api/support-tickets
+GET http://localhost:8080/api/support-tickets
+GET http://localhost:8080/api/support-tickets/{uuid}
+PUT http://localhost:8080/api/support-tickets/{uuid}
+DELETE http://localhost:8080/api/support-tickets/{uuid}
+```
+#### REST payload sample
+``` 
+{
+  "title": "Login issue",
+  "description": "User cannot log into the system",
+  "status": "IN_PROGRESS"
+}
+``` 
+
 
 ## Requirements
 - Docker
