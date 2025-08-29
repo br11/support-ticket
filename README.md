@@ -3,7 +3,7 @@ Microservice with CRUD + Kafka Pub/Sub.
 
 (Spring Boot + Kafka + H2 + Docker)
 
-#### REST endpoints
+#### REST endpoints: 
 ``` 
 POST http://localhost:8080/api/support-tickets
 GET http://localhost:8080/api/support-tickets
@@ -11,7 +11,7 @@ GET http://localhost:8080/api/support-tickets/{uuid}
 PUT http://localhost:8080/api/support-tickets/{uuid}
 DELETE http://localhost:8080/api/support-tickets/{uuid}
 ```
-#### REST payload sample
+#### REST payload sample: 
 ``` 
 {
   "title": "Login issue",
